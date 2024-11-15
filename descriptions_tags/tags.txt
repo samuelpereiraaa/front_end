@@ -1,0 +1,27 @@
+tags_bloco:
+- <h1_h6> // hierarquia de títulos
+ 
+- <div> // separar seções
+
+- <form> // formulário
+ 
+- <p> // parágrafo
+
+- <ul/ol> // listas
+
+tags_linha - 
+
+- <br> // quebra de linhas
+
+- <img src ""> // imagem
+
+---width == largura---
+---height == altura---
+
+- <span> // texto específico
+
+- <a href = ""> // ancora de link
+
+- <button> // botão
+
+- <input> // abrir caixa de texto
