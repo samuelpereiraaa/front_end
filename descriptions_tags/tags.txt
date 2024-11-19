@@ -25,3 +25,5 @@ tags_linha -
 - <button> // botão
 
 - <input> // abrir caixa de texto
+
+- < em > // enfâse 
