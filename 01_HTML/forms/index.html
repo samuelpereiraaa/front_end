@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <!--div modelo-->
+        <div>
+            <label for="modelo">Modelo:</label>
+            <input id="modelo" type="text" name="modelo" placeholder="Ex: Sedan">
+        </div>
+        <br>
+        <!--div marca-->
+        <div>
+            <label for="marca">Marca:</label>
+            <input id="marca" type="text" name="marca" placeholder="Ex: Hilux">
+        </div>
+        <br>
+        <!--div ano-->
+        <div>
+            <label for="ano">Ano do Carro:</label>
+            <input id="ano" type="text" name="ano" placeholder="Ex: 2019">
+        </div>
+        <br>
+        <!--div quilometragem-->
+        <div>
+            <label for="quilometragem">Quilometragem:</label>
+            <input id="quilometragem" type="text" name="quilometragem" placeholder="Ex: 1.000km">
+        </div>
+        <br>
+        <!--div valor-->
+        <div>
+            <label for="valor">Valor:</label>
+            <input id="valor" type="text" name="valor" placeholder="Ex: 30.000R$">
+        </div>
+        <br>
+        <!--div radio-->
+        <div>
+            <label for="usado">Usado</label>
+            <input id="usado" type="radio" name="usadoNovo" value="usado">
+
+            <label for="novo">Novo</label>
+            <input id="novo" type="radio" name="usadoNovo" value="novo">
+        </div>
+        <br>
+        <!--div checkbox-->
+        <div>
+            <label for="airbag">airbag</label>
+            <input id="airbag" type="checkbox" name="adicionais" value="airbag">
+
+            <label for="roda cromada">roda cromada</label>
+            <input id="roda cromada" type="checkbox" name="adicionais" value="roda cromada">
+
+            <label for="ar condicionado">ar condicionado</label>
+            <input id="ar condicionado" type="checkbox" name="adicionais" value="ar condicionado">
+            
+            <label for="alarme">alarme</label>
+            <input id="alarme" type="checkbox" name="adicionais" value="alarme">
+        </div>
+        <br>
+        <!--div input select-->
+        <div>
+            <label for="finalPlaca">Final da Placa:</label>
+            <select id="finalPlaca" name="finalPlaca">
+                <option value="1789">1789</option>
+                <option value="5896">5896</option>
+                <option value="5462">5462</option>
+            </select>
+        </div>
+
+        <br><br>
+     
+
+        <!--div submit-->
+        <input type="submit" value="enviar">
+
+
+    </form>
+    
+</body>
+</html>
