@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+             box-sizing: border-box;
+             font-size: 16px;
+            }
+
+         *, *:before, *:after {
+              box-sizing: inherit;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        img {
+             max-width: 100%;
+             height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--cabeçalho-->
+    <section class="header">
+
+        <article class="headerSearch">
+     
+        </article>
+   
+        <article class="headerOptions">
+            <a class="options" href="categories.html">Categories</a>
+            <a class="options" href="oferts.html">Ofert to day</a>
+            <a class="options" href="historic.html">Historic</a>
+            <a class="options" href="fashion.html">Fashion</a>
+            <a class="options" href="register.html">Register</a>
+        </article>
+    </section>
+    <section class="container">
+        <h1>fill in the information</h1>
+        <br>
+        <form action="#" method="post">
+
+            <div>
+                <label for="name">name:</label>
+                <input id="name" type="text" name="name" placeholder="type your name"  >
+            </div>
+            <br>
+
+            <div>
+                <label for="email">email:</label>
+                <input id="email" type="text" name="email" placeholder="type your e-mail">
+            </div>
+            <br>
+
+            <div>
+                <label for="passoword">passoword:</label>
+                <input  id="passoword" type="text" name="passoword" placeholder="type your passoword">
+            </div>
+            <br>
+
+            <div>
+                <label for="repeatPassoword">repeat passoword:</label>
+                <input  id="repeatPassoword" type="text" name="repeatPassoword" placeholder="type your passoword">
+            </div>
+            <br>
+            
+            <div>
+                <label for="sexo">type your sex</label>
+                <select name="sexo" id="sexo">
+                    <option value="masculine">masculine</option>
+                    <option value="feminine">feminine</option>
+                </select>
+            </div>
+        </form>
+    </section>
