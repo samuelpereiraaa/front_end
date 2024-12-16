@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <form id="forms" action="http://api.dodev.com.br/submeterDados" method="post">
+        <!--nome-->
+        <div>
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome" placeholder="EX: samuel">
+        </div>
+
+        <br>
+        <br>
+
+        <!--endereco-->
+        <div>
+        <label for="endereco">Endereço:</label>
+        <input id="endereco" type="text" name="endereco" placeholder="Ex: Hélio jatoba">
+        </div>
+
+        <br>
+        <br>
+        
+        <!--dias da semana-->
+        <div> 
+            <label for="diasDaSemana">Dias da Semana</label>
+            <select name="diasDaSemana" id="diasDaSemana">
+                <option value="segunda">segunda</option>
+                <option value="terca">terça</option>
+                <option value="quarta">quarta</option>
+                <option value="quinta">quinta</option>
+                <option value="sexta">sexta</option>
+                <option value="sabado">sabado</option>
+            </select>
+        </div>
+           
+        <br>
+        <br>
+
+        <!--horarios disponiveis-->
+        <div>
+            <label for="abertura">Horário de abertura:</label>
+            <input type="time" name="abertura" id="abertura">
+            <br> <br>
+            <label for="abertura">Horário de encerramento:</label>
+            <input type="time" name="encerramento" id="encerramento">
+        </div>
+
+        <br>
+        <br>
+
+        <!--enviar-->
+        <div>
+            <input type="submit" value="enviar">
+        </div>
+    </form>
+</section>
+
+
+
+
+<script >
+
+// evento para enviar o formulario
+document.getElementById('forms').addEventListener('submit', (event) => {
+    const form = event.currentTarget
+    const data = {
+        nome: form.nome.value,
+        endereco: form.endereco.value,
+        diasDaSemana: form.diasDaSemana.value,
+        abertura: form.abertura.value,
+        encerramento: form.encerramento.value,
+    }
+// preparação de envio
+    console.log('preparando o envio do formulário...')
+    form.nome.disabled = true;
+    form.endereco.disabled = true;
+    form.diasDaSemana.disabled = true;
+    form.abertura.disabled = true;
+    form.encerramento.disabled = true;
+
+    window.localStorage.setItem('informações', JSON.stringify(data))
+})
+
+// carregamento da pagina
+window.onload = () => {
+    const form = document.getElementById('form')
+    let data = window.localStorage.getItem('informações')
+    if(data) {
+        data = JSON.parse(data)
+        form.nome.value = data.nome
+        form.endereco.value = data.endereco
+        form.diasDaSemana.value = data.diasDaSemana
+        form.abertura.value = data.abertura
+        form.encerramento.value = data.encerramento
+    }
+}
+</script>
+</body>
+
+</html>
