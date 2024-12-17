@@ -8,3 +8,43 @@ input {
 input:focus {
     border: 2px solid purple;
 }
+
+/* adicionando responsividade */
+
+@media only screen  and (min-width: 800px) {
+    .campoTexto {
+        float: left;
+        width: 40%;
+    }
+
+    .horario {
+        float: left;
+        width: 59.9%;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+    .campoTexto {
+        float: left;
+        width: 53%;
+    }
+
+    .horario {
+        float: left;
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .campoTexto {
+        float: left;
+        width: 100%;
+    }
+
+    .horario {
+        float: left;
+        width: 100%;
+    }
+}
