@@ -1,0 +1,18 @@
+.cabecalho{
+    height: 5vh;
+    background-color: black;
+}
+
+.container{
+    height: 110vh;
+    display: grid;
+    place-items: center;
+    background-color: #363636;
+}
+
+.produtoPrincipal{
+    height: 36vh;
+    width: 50vw;
+    text-align: center;
+    color: beige;
+}
