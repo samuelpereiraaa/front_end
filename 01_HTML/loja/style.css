@@ -1,18 +1,67 @@
+/* cabeçalho */
 .cabecalho{
     height: 5vh;
     background-color: black;
 }
 
+/* corpo principal */
 .container{
-    height: 110vh;
+    height: 150vh;
     display: grid;
     place-items: center;
-    background-color: #363636;
+    background-color: gray;
+}
+
+/* caixa do produto principal*/
+.tituloPrincipal, .tituloProdutos{
+    margin-bottom:25px;
+    text-align: center;
+}
+
+.botaoPrincipal{
+    margin-top: 20px;
+    border:  solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
 }
 
 .produtoPrincipal{
-    height: 36vh;
-    width: 50vw;
+    height: 50vh;
+    width: 28vw;
     text-align: center;
-    color: beige;
+    color: floralwhite;
+   
+}
+
+/* produtos */
+.corpoModelos {
+    
+    height: 45vh;
+    width: 80vw;
+    display: inline-block;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.produtos {
+    width: 28vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    float: left; 
+      
+}
+
+
+
+.boxProduto {
+    
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-top: 5px; /* Espaçamento acima do texto */
 }
