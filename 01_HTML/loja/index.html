@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loja</title>
+    <title>Loja</title>
     <link rel="stylesheet" href="style.css">
     <style>
         html {
@@ -31,80 +31,67 @@
         }
     </style>
 </head>
+
 <body>
-    <!--cabeçalho-->
+    <!-- cabeçalho -->
     <section class="cabecalho">
         <div class="opcoes">
-            <a href="">sobre</a>
-            <a href="">suporte</a>
+            <a href="">Sobre</a>
+            <a href="">Suporte</a>
         </div>
+        
+            <img src="imagens/icone_market.png" alt="icone" class="icone" >
+       
     </section>
-    
-    <!--container-->
-    <section class="container">
-        <!-- produto principal-->
-        <section class="produtoPrincipal">
-            <div class="texto principal"> 
+
+    <!-- container principal -->
+    <section class="containerOrigem">
+
+        <!-- produto principal -->
+        <div class="containerPrimario">
             <h1 class="tituloPrincipal">Seu armário tech</h1>
-           
-            <p>aqui você conhece as melhores peças de roupa</p>
-
-            <button class="botaoPrincipal">saiba mais</button>
-        </div>
-
-        <div class="img">
             <br>
-            <img src="imagens/renomear.jpg" alt="camiseta1" style="height: 35vh;"  >
-        </div>
-        </section>   
-    <!-- modelos -->
-     
-        <div class="tituloProdutos">
-            <h1>Principais modelos</h1>
-        </div>
+            <p>Aqui você conhece as melhores peças de roupa</p>
 
-
-
-    <section class="corpoModelos">
-
-        <div class="produtos"></div>
-           <img class="boxProduto" src="imagens/camiseta1.jpg" alt="camiseta1" style="height: 30vh;">
+            <button class="botaoPrincipal">Saiba mais</button>
 
             
+                <img src="imagens/renomear.jpg" alt="Camiseta Tech">
+            </div>
         </div>
 
-        <div class="produtos">
-            <img class="boxProduto" src="imagens/camiseta2.jpg" alt="camiseta2" style="height: 30vh;">
-        </div>
+        <!-- titulo Produtos -->
+        <div class="tituloProdutos">
+            <h1>Principais Modelos</h1>
+        </div> 
 
-        <div class="produtos">
-            <img class="boxProduto" src="imagens/camiseta3.jpg" alt="camiseta3" style="height: 30vh;">
-        </div>
-       
-     </section>
+        <!-- produtos -->
+        <section class="containerSecundario">
+            <div class="produtos">
+                <img class="imgProduto" src="imagens/camiseta1.jpg" alt="Camiseta 1">
+                <p class="descricaoProduto">Conjunto all-black</p>   
+            </div>
 
-    
+            <div class="produtos">
+                <img class="imgProduto" src="imagens/camiseta2.jpg" alt="Camiseta 2">
+                <p class="descricaoProduto">Moletom Branco</p>
+            </div>
 
-    <form action="" class="forms" method="post"></form>
+            <div class="produtos">
+                <img class="imgProduto" src="imagens/camiseta3.jpg" alt="Camiseta 3">
+                <p class="descricaoProduto">Casaco Preto</p>
+            </div>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- formulário -->
+        <section class="containerFormulario">
+            <h2>Cadastre-se para receber novidades!</h2>
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
     </section>
 </body>
