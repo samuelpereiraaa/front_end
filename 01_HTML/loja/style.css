@@ -1,6 +1,6 @@
 /* Cabeçalho */
 .cabecalho {
-    background-color: rgb(222, 19, 226);
+    background-color: black;
     color: white;
     height: 50px;
     display: flex;
@@ -12,6 +12,7 @@
     left: 0;
  }
  
+
  .icone {
     height: 24px;
     margin-left: auto;
@@ -37,7 +38,7 @@
      width: 80%;
      max-width: 500px;
      border-radius: 10px;
-     background-color: red;
+    
  }
  
  .botaoPrincipal {
@@ -69,7 +70,7 @@
      gap: 20px;
      padding: 20px;
      flex-wrap: wrap;
-     background-color: green;
+     
  }
  
  .produtos {
@@ -101,11 +102,52 @@
      text-align: center;
      border-radius: 10px;
      padding: 20px;
-     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-     margin-top: 20px;
-     background-color: yellow;
+     
+     margin-top: 10px;
+     background-color: gainsboro;
  }
  
+ .containerFormulario label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.containerFormulario input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.containerFormulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* rodape */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Responsividade */
  @media (max-width: 800px) {
      .containerOrigem {
