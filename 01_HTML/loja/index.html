@@ -3,106 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        html {
-             box-sizing: border-box;
-             font-size: 16px;
-            }
-
-         *, *:before, *:after {
-              box-sizing: inherit;
-        }
-
-        body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-            margin: 0;
-            padding: 0;
-            font-weight: normal;
-        }
-
-        ol, ul {
-            list-style: none;
-        }
-
-        img {
-             max-width: 100%;
-             height: auto;
-        }
-    </style>
-</head>
+    <title>VIRTUAL SHORTS | Sua Loja Tech</title> <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
-    <!-- cabeçalho -->
-    <section class="cabecalho">
+    <header class="cabecalho">
         <div class="opcoes">
-            <h2 class="h2Cabecalho"><b>VIRTUAL SHORTS</b></h2>
-            <a href="">Sobre</a>
-            <a href="">Suporte</a>
+            <a href="index.html" class="logo-loja"><b>VIRTUAL SHORTS</b></a>
+            <a href="#">Sobre</a>
+            <a href="#">Suporte</a>
         </div>
         
-            <img src="imagens/market_branco.png" alt="icone" class="icone" >
+        <img src="imagens/market_branco.png" alt="Ícone de Carrinho de Compras" class="icone" >
        
-    </section>
+    </header>
 
-    <!-- container principal -->
-    <section class="containerOrigem">
+    <main class="containerOrigem">
 
-        <!-- produto principal -->
-        <div class="containerPrimario">
+        <section class="containerPrimario">
             <h1 class="tituloPrincipal">Seu armário tech</h1>
             <br>
             <p>Aqui você conhece as melhores peças de roupa</p>
 
             <button class="botaoPrincipal">Saiba mais</button>
 
-            
-                <img src="imagens/renomear.jpg" alt="Camiseta Tech">
-            </div>
-        </div>
-
-        <!-- titulo Produtos -->
-        <div class="tituloProdutos">
-            <h1>Principais Modelos</h1>
-        </div> 
-
-        <!-- produtos -->
-        <section class="containerSecundario">
-            <div class="produtos">
-                <img class="imgProduto" src="imagens/camiseta1.jpg" alt="Camiseta 1">
-                <p class="descricaoProduto">Conjunto all-black</p>   
-            </div>
-
-            <div class="produtos">
-                <img class="imgProduto" src="imagens/camiseta2.jpg" alt="Camiseta 2">
-                <p class="descricaoProduto">Moletom Branco</p>
-            </div>
-
-            <div class="produtos">
-                <img class="imgProduto" src="imagens/camiseta3.jpg" alt="Camiseta 3">
-                <p class="descricaoProduto">Casaco Preto</p>
+            <div class="imgProdutoPrincipal">
+                <img src="imagens/renomear.jpg" alt="Camiseta Tech em destaque">
             </div>
         </section>
 
-        <!-- formulário -->
+        <div class="tituloProdutos">
+            <h2>Principais Modelos</h2> </div> 
+
+        <section class="containerSecundario">
+            <div class="produtos">
+                <a href="produto1.html" class="link-produto"> 
+                    <img class="imgProduto" src="imagens/camiseta1.jpg" alt="Conjunto all-black">
+                    <p class="descricaoProduto">Camiseta preta</p>  
+                </a> 
+            </div>
+
+            <div class="produtos">
+                <a href="produto2.html" class="link-produto">
+                     <img class="imgProduto" src="imagens/camiseta2.jpg" alt="Moletom Branco">
+                     <p class="descricaoProduto">Moletom</p>
+                </a>    
+            </div>
+
+            <div class="produtos">
+                <a href="produto3.html" class="link-produto">
+                    <img class="imgProduto" src="imagens/camiseta3.jpg" alt="Casaco Preto">
+                    <p class="descricaoProduto">Conjunto all-black</p>
+                </a>    
+            </div>
+        </section>
+
         <section class="containerFormulario">
             <h2>Cadastre-se para receber novidades!</h2>
             <form action="#" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome">
-
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="telefone">
-
-                <button type="submit">Enviar</button>
+                <input type="text" id="nome" name="nome" required> <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"> <button type="submit">Enviar</button>
             </form>
         </section>
 
-    </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 VIRTUAL SHORTS. Todos os direitos reservados.</p>
+    </footer>
     
 </body>
 </html>

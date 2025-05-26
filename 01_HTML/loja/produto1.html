@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Preta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <header class="cabecalho">
+        <div class="opcoes">
+            <a href="index.html" class="logo-loja"><b>VIRTUAL SHORTS</b></a>
+            <a href="#">Sobre</a>
+            <a href="#">Suporte</a>
+        </div>
+        
+        <img src="imagens/market_branco.png" alt="Ícone de Carrinho de Compras" class="icone" >
+       
+    </header>
+
+    <main class="containerOrigem pagina-produto">
+        <div class="detalhes-produto">
+
+            <div class="galeria-produto-detalhe">
+               <div class="imagem-principal-container">
+                    <img src="imagens/camiseta1_lado.jpeg" alt="Camiseta Preta - Vista Lateral" id="imagem-principal-produto">
+                </div>
+            <div class="miniaturas-produto">
+                <img src="imagens/camiseta1_lado.jpeg" alt="Miniatura Camiseta Preta - Vista Lateral" class="miniatura-img ativa" onclick="trocarImagem('imagens/camiseta1_lado.jpeg', this)">
+                <img src="imagens/camiseta1_frente.jpeg" alt="Miniatura Camiseta Preta - Vista Frontal" class="miniatura-img" onclick="trocarImagem('imagens/camiseta1_frente.jpeg', this)">
+                <img src="imagens/camiseta1_costas.jpeg" alt="Miniatura Camiseta Preta - Vista de Costas" class="miniatura-img" onclick="trocarImagem('imagens/camiseta1_costas.jpeg', this)">
+            </div>
+            </div>
+
+            <div class="info-produto">
+                <h1>Camiseta Preta</h1>
+                
+                <p class="preco-produto">R$ 124,99</p>
+
+                <h2>Descrição</h2>
+
+                <p class="descricao-detalhada"> Indispensável em qualquer guarda-roupa, nossa Camiseta Preta Clássica é a 
+                    definição de versatilidade e conforto. Confeccionada em algodão macio de alta qualidade,
+                     ela oferece um toque suave à pele e um caimento impecável que se adapta a diferentes 
+                     estilos e ocasiões.
+                </p>
+                 
+                <button class="botao-comprar">Adicionar ao Carrinho</button>
+            </div>
+
+       </main>
+
+<footer>
+    <p> &copy; 2025 VIRTUAL SHORTS. Todos os direitos reservado.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
