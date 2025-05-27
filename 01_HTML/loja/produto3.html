@@ -21,10 +21,18 @@
     <main class="containerOrigem pagina-produto">
         <div class="detalhes-produto">
 
-            <div class="imagem-produto imagem-conjunto-especifica" >
-                <img src="imagens/camiseta3.jpg" alt="all black">
-            </div>
+            <div class="galeria-produto-detalhe">
+                <div class="imagem-principal-container" >
+                    <img src="imagens/camiseta3/camiseta3.jpg" alt="all black" id="imagem-principal-produto">
+                 </div>
 
+                 <div class="miniaturas-produto">
+                    <img src="imagens/camiseta3/conjunto_frente.jpeg" alt="CONJUNTO frente" class="miniatura-img ativa" onclick="trocarImagem('imagens/camiseta3/conjunto_frente.jpeg', this)">
+                    <img src="imagens/camiseta3/conjunto_lado.jpeg" alt="CONJUNTO lado" class="miniatura-img" onclick="trocarImagem('imagens/camiseta3/conjunto_lado.jpeg', this)">
+                    <img src="imagens/camiseta3/conjunto_costas.jpeg" alt="CONJUNTO costas" class="miniatura-img" onclick="trocarImagem('imagens/camiseta3/conjunto_costas.jpeg', this)">
+                 </div>
+            </div>
+           
             <div class="info-produto">
                 <h1>Conjunto all-black</h1>
                 
@@ -46,5 +54,6 @@
     <p> &copy; 2025 VIRTUAL SHORTS. Todos os direitos reservado.</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -21,9 +21,18 @@
     <main class="containerOrigem pagina-produto">
         <div class="detalhes-produto">
 
-            <div class="imagem-produto">
-                <img src="imagens/camiseta2.jpg" alt="moletom">
+            <div class="galeria-produto-detalhe">
+                <div class="imagem-principal-container">
+                <img src="imagens/camiseta2/camiseta2.jpg" alt="moletom imagem principal" id="imagem-principal-produto">    
+                </div>
+
+                <div class="miniaturas-produto">
+                    <img src="imagens/camiseta2/moletom_costas.jpeg" alt="MOLETOM costas" class="miniatura-img ativa" onclick="trocarImagem('imagens/camiseta2/moletom_costas.jpeg', this)">
+                    <img src="imagens/camiseta2/moletom_frente.jpeg" alt="MOLETOM frente" class="miniatura-img" onclick="trocarImagem('imagens/camiseta2/moletom_frente.jpeg', this)">
+                    <img src="imagens/camiseta2/moletom_lado.jpeg" alt="MOLETOM lado" class="miniatura-img" onclick="trocarImagem('imagens/camiseta2/moletom_lado.jpeg', this)">
+                </div>     
             </div>
+            
 
             <div class="info-produto">
                 <h1>Moletom</h1>
@@ -46,6 +55,6 @@
 <footer>
     <p> &copy; 2025 VIRTUAL SHORTS. Todos os direitos reservado.</p>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
